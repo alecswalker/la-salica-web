@@ -1,184 +1,342 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" type="image/x-icon" href="img/coding.ico"> -->
-    <title>LA SĂLICĂ</title>
-
-    <!-- ICONSCOUT CDN -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-
-    <!-- GOOGLE FONTS (MONTSERRAT) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
-    <!-- SWIPER JS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-
-    <link rel="stylesheet" href="./css/style.css">
-
-    <style>
-        body { background-image: url(img/bg2.jpg) }
-    </style>
+  <title>LA SĂLICĂ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv=“X-UA-Compatible” content=“IE-edge”>
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/custom-responsive-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="script/all-plugins.js"></script>
+  <script type="text/javascript" src="script/plugin-active.js"></script>
 </head>
+
 <body>
-    <nav>
-        <div class="container nav__container">
-            <a href="index.html"><h4>LA SĂLICĂ</h4></a>
-            <ul class="nav__menu">
-                <li><a href="#"><b>About Us!</b></a></li>
-                <li><a href="#"><b>Join Us!</b></a></li>
-                <li><a href="#"><b>Free Sesion!</b></a></li>
-            </ul>
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+  <!-- Header starts here -->
+  <header id="Header">
+    <nav class="main-navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <a href="#"><h3 style="color:white;">LA SĂLICĂ</h3></a>
+            </div>
+          </div>
+          <div class="col text-right">
+            <div class="menu-wrap">
+              <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </nav>
-    
-    <header>
-        <div class="container header__container">
-            <div class="header__left">
-                <h1>It is a shame for a man to grow old without seeing the beauty and strength of which his body is capable. I desire only to know the truth, and to live as well as I can. And, to the utmost of my power, I exhort all other men to do the same.</h1>
-                <p>
-                    - Socrates
-                </p>
-                <a href="#" class="btn btn-primary">Aici nu stiu ce e </a>
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#" class="smooth-scroll">Acasă</a></li>
+        <li><a href="#" class="smooth-scroll">Despre Noi</a></li>
+        <li><a href="#" class="smooth-scroll">Devino Membru</a></li>
+        <li><a href="#" class="smooth-scroll">Sesiune Gratuită</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Header ends here -->
+  <!-- Banner starts here -->
+  <section id="HeroBanner">
+    <div id="BannerSlider" class="owl-carousel">
+      <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="banner-text">
+                <h1>Reach your limits<br /> and get to the next level!</h1>
+                <p> “It is a shame for a man
+                  <br /> to grow old without seeing
+                  <br />the beauty and strength
+                  <br />of which his body is capable” </p>
+                <div class="bannet-cta">
+                  <div class="cta-1">
+                    <a href="#">Abonamente</a>
+                  </div>
+                  <div class="cta-2">
+                    <a href="#">Mai multe</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <div class="header__right">
-                <div class="header__right-image">
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--========================== END OF HEADER ============================-->
-
-      <section class="courses">
-          <h2>Join Us!</h2>
-          <div class="container courses__container">
-            <article class="course">
-                <div class="course__image">
-                    <img src="./img/fight1.jpg">
-                </div>
-                <div class="course__info">
-                    <h4>Introducere în fighting</h4>
-                    <br/>
-                    <p1>În acest pachet Alecs nu te bate, Alecs te invata să te bati!</p1>
-                    <br/>
-                    <br/>
-                    <a href="curs-n5.html" class="btn btn-primary">Vreau șefu!</a>
-                </div>
-            </article>
-
-            <article class="course">
-                <div class="course__image">
-                    <img src="./img/fight2m.jpg">
-                </div>
-                <div class="course__info">
-                    <h4>Bătaie mai puțin premium</h4>
-                    <br/>
-                    <p2>Dacă alegi pachetul de bataie mai putin premium, nu te bate Alecs asa de rau!</p2>
-                    <br/>
-                    <a href="curs-n4.html" class="btn btn-primary">No hai!</a>
-                </div>
-            </article>
-
-            <article class="course">
-                <div class="course__image">
-                    <img src="./img/Goku-up.gif">
-                </div>
-                <div class="course__info">
-                    <h4>Bătaie premium</h4>
-                    <br/>
-                    <p3> Achizitioneaza pachetul de bataie premium daca vrei ca Alecs sa iti rupă coastele bine!</p3>
-                    <br/>
-                    <a href="#" class="btn btn-primary">Mi-e frică, da mă bag</a>
-                </div>
-            </article>
-          </div>
-      </section>
-      <!--====================== END OF COURSES =====================-->
-
-<footer>
-        <div class="container footer__container">
-          <div class="footer__1">
-            <a href="index.html" class="footer__logo"><h4>LA SĂLICĂ</h4></a>
-            <p4>
-              Hai cu mine "La Salica" sa fac din tine ELITA!!
-            </p4>
-          </div>
-  
-          <div class="footer__2">
-            <h4>Meniu</h4>
-            <ul class="permalinks">
-              <li><a href="#">About Us!</a></li>
-              <li><a href="#">Join Us!</a></li>
-              <li><a href="#">Free Sesion!</a></li>
-            </ul>
-          </div>
-  
-          <div class="footer__3">
-            <h4>GDPR</h4>
-            <ul class="privacy">
-              <li><a href="#">Politica de confidențialitate</a></li>
-              <li><a href="#">Termeni și condiții</a></li>
-            </ul>
-          </div>
-  
-          <div class="footer__4">
-            <h4>Contact</h4>
-            <div>
-              <p5>0770 272 428</p>
-              <p5>allex.diaconu@gmail.com</p>
-            </div>
-  
-            <ul class="footer__socials">
-              <li>
-                <a href="#"><i class="uil uil-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="uil uil-instagram-alt"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="uil uil-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
-              </li>
-            </ul>
           </div>
         </div>
-        <div class="footer__copyright">
-            <small>Copyright &copy; Alecs Walker</small>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="banner-text">
+                <h1>Reach your limits<br /> and get to the next level!</h1>
+                <p> “It is a shame for a man
+                  <br /> to grow old without seeing
+                  <br />the beauty and strength
+                  <br />of which his body is capable” </p>
+                <div class="bannet-cta">
+                  <div class="cta-1">
+                    <a href="#">Click Here</a>
+                  </div>
+                  <div class="cta-2">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
-
-
-
-      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-      <script src="./js/main.js"></script>
+      </div>
+    </div>
+  </section>
+  <!-- Banner ends here -->
+  <!-- Features section starts here -->
+  <section id="Gain">
+    <div class="container">
+      <div class="title text-center">
+        <h3>Abonamentele Noastre</h3>
+        <p>In momentul de fata, va oferim 4 tipuri de abonamente.
+        </br>
+        La achizitionarea a 3 luni de abonament primiti 1 luna gratis!
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="each-icon box-1">
+            <div class="icon-wrap">
+              <i class="uil-power"></i>
+            </div>
+            <div class="icon-text">
+              <h3>Abonament student</h3>
+              <p>Acest tip de abonament este destinat studenților.
+                De la ora 07:00 până la ora 16:00 </br>
+              </br>
+                150 de Lei
+              </p>
+              <div class="cta">
+                <a title="Read More" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="each-icon box-2">
+            <div class="icon-wrap">
+              <i class="fa fa-cubes"></i>
+            </div>
+            <div class="icon-text">
+              <h3>Abonament standard</h3>
+              <p>La acest tip de abonament aveti accesul garantat in sala intre orele 07:00 si 22:00.
+                Acest la sala de fitness si sala de cardio
+              </br>
+            </br>
+            200 de Lei
+              </p>
+              <div class="cta">
+                <a title="Read More" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="each-icon box-3">
+            <div class="icon-wrap">
+              <i class="fa fa-tachometer-alt"></i>
+            </div>
+            <div class="icon-text">
+              <h3>Abonament Premium</h3>
+              <p>Abonamentul Premium vine cu un pachet de 10 sedinte de antrenament cu instructor personal.
+                Acces la sauna si acces la sala de aerobic.
+              </br>
+            </br>
+            400 de Lei
+              </p>
+              <div class="cta">
+                <a title="Read More" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <div class="each-icon box-4">
+            <div class="icon-wrap">
+              <i class="uil-trophy"></i>
+            </div>
+            <div class="icon-text">
+              <h3>Abonament V.I.P</h3>
+              <p>Beneficiezi de un plan lunar de antrenament.
+                Suport si antrenor personal pe toata durata acestuia.
+                Plan alimentar personalizat.
+              </br>
+            </br>
+              600 de Lei
+              </p>
+              <div class="cta">
+                <a title="Read More" href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features section ends here -->
+  <!-- Laptop section starts here -->
+  <section id="Laptop">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="laptop-text">
+            <h2>Despre noi</h2>
+            <p>“To keep the body in good health is a duty… otherwise we shall not be able to keep our mind strong and clear.”
+            </br>
+          </br>
+            Scopul nostru este sa te ajutam sa ai corpul mult dorit, dar asta se poate intampla doar cu ajutor tau!
+          </br>
+          Esti pregatit sa lucrezi pentru a obtine ceea ce vrei?
+        </br>
+        Atunci ai ajuns unde trebuie !
+            </p>
+            <a href="#">Mai multe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Laptop section ends here -->
+  <!-- Contact us section starts here -->
+  <section id="ContactUs">
+    <div class="container contact-container">
+      <h3 class="contact-title">Să ne auzim!!!</h3>
+      <div class="contact-outer-wrapper">
+        <div class="form-wrap">
+          <p>Introdu aici datele tale de contact.
+          </br>
+          Promitem ca nu le furam sau folosim in moduri dubioase!
+          </p>
+          <form action="#" method="post">
+            <div class="fname floating-label">
+              <input type="text" required class="floating-input" name="full name" />
+              <label for="title">Nume și prenume</label>
+            </div>
+            <div class="email floating-label">
+              <input type="email" required class="floating-input" name="email" />
+              <label for="email">E-mail</label>
+            </div>
+            <div class="contact floating-label">
+              <input type="tel" class="floating-input" name="contact" />
+              <label for="email" required>Telefon</label>
+            </div>
+            <div class="company floating-label">
+              <input type="text" class="floating-input" name="company" />
+              <label for="email">Companie</label>
+            </div>
+            <div class="user-msg floating-label">
+              <textarea type="text" class="floating-input" name="Message"></textarea>
+              <label for="message" class="msg-label">Observații / note...</label>
+            </div>
+            <div class="submit-btn">
+              <button type="submit">Trimiteți</button>
+            </div>
+          </form>
+        </div>
+        <div class="address-block">
+          <p class="add-title">Detalii de contact</p>
+          <div class="c-detail">
+            <div class="c-icon"><i class="fas fa-address-book" aria-hidden="true"></i></div>
+            <div class="c-info">
+              <h4>Addresă</h4>
+              <p>Craiova - Bulevardul 1 Mai</p>
+            </div>
+          </div>
+          <div class="c-detail">
+            <div class="c-icon"><i class="fas fa-phone-square" aria-hidden="true"></i></div>
+            <div class="c-info">
+              <h4>Telefon</h4>
+              <p><a href="tell:+1234567890">0770272428</a></p>
+            </div>
+          </div>
+          <div class="c-detail">
+            <div class="c-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div class="c-info">
+              <h4>E-mail</h4>
+              <p><a href="mailto:abc@abc.com">allex.diaconu@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact us section ends here -->
+  <!-- Footer section starts here -->
+  <footer id="Footer">
+    <div class="container text-center">
+      <div class="footer-text ">
+        <p>Abonează-te la newsletter-ul nostru
+          <br class="hidden-lg-down" /> Stai la curent cu tot ceea ce se întâmplă.</p>
+        <div class="email-box">
+          <form action="#" method="post">
+            <input required type="email">
+            <label for="email">Email</label>
+            <input class="submit" type="submit" value="">
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="copy-right">
+              <p>© La Sălică, Inc.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+            <div class="social-share">
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="designed">Designed by Alecs Walker</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer section ends here -->
 </body>
-</html>
 
-      <script>
-          // slides for testimonials section
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            },
-            // when window width is >= 600px
-            breakpoints: {
-                600: {
-                    slidesPerView: 2
-                }
-            }
-        });
-      </script>
+</html>
